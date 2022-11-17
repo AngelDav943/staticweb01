@@ -1,0 +1,101 @@
+html {
+    zoom:150%;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #324249;
+    background-repeat: repeat;
+    background-size: 100px;
+    background-image: url("orange_floortiles.png");
+
+    /*position: fixed;
+    top: 0;*/
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+header * {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:#ff5416;
+}
+
+nav a {
+    padding: 10px;
+    background-color:#ff5416;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:#ff3700;
+}
+
+header img {
+    height: 90%;
+}
+
+body {
+    /*padding-top: 100px;*/
+    background-color: #f0faff;
+}
+
+article {
+    margin: 25px auto;
+    background-color: #e4f2ff;
+    max-width: calc(100% - 50px);
+    width: 700px;
+    height: fit-content;
+    display: flex;
+    align-items: stretch;
+}
+
+article content {
+    padding: 0px 25px;
+}
+
+article #title {
+    color:white;
+    background-color: #131e2e4a;
+    margin: 0px -25px;
+    padding: 20px 25px;
+    height: 30px;
+    overflow: hidden;
+}
+
+article img {
+    height: 100px;
+    height: auto;
+}
+
+article img.background {
+    width:25%;
+    height: auto;
+    object-fit: cover;
+    background-color: #131e2e4a;
+}
+
+@media screen and (max-width: 610px) {
+    article img.background {
+        width: 100%;
+        height: 70px;
+        margin-bottom: -70px;
+    }
+
+    article {
+        flex-direction: column;
+    }
+}
