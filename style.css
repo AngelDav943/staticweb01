@@ -1,5 +1,5 @@
 html {
-    zoom:150%;
+    zoom:125%;
 }
 
 html, body {
@@ -30,18 +30,18 @@ header * {
 nav {
     display: flex;
     justify-content: center;
-    background-color:#ff5416;
+    background-color:#ff9c29;
 }
 
 nav a {
     padding: 10px;
-    background-color:#ff5416;
+    background-color:#ff9c29;
     color: white;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color:#ff3700;
+    background-color:#ff8818;
 }
 
 header img {
@@ -61,6 +61,10 @@ article {
     height: fit-content;
     display: flex;
     align-items: stretch;
+}
+
+article.post {
+    padding: 0px;
 }
 
 article content {
@@ -88,14 +92,14 @@ article img.background {
     background-color: #131e2e4a;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 990px) {
     article img.background {
         width: 100%;
         height: 70px;
         margin-bottom: -70px;
     }
 
-    article {
+    article.post {
         flex-direction: column;
     }
 }
